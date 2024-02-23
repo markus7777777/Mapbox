@@ -1,5 +1,6 @@
 import ast
 import csv
+import numpy as np
 
 # Path to the file containing the array
 file_path = r"./array.json"
@@ -16,7 +17,7 @@ def read_array_from_file(file_path):
 # Use the function to read the array
 array = read_array_from_file(file_path)
 
-adjusted_array = [[x, y, z-200, r, g, b] for x, y, z, r, g, b in array]
+adjusted_array = [[x, y, np.round(z-200,2), r, g, b] for x, y, z, r, g, b in array]
 
 
 
