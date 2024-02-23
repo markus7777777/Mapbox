@@ -16,7 +16,7 @@ def read_array_from_file(file_path):
 # Use the function to read the array
 array = read_array_from_file(file_path)
 
-adjusted_array = [[x, y, z-40, r, g, b] for x, y, z, r, g, b in array]
+adjusted_array = [[x, y, z-200, r, g, b] for x, y, z, r, g, b in array]
 
 
 
